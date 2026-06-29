@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Freshline — Expiry Risk Engine for Quick Commerce</title>
+<meta name="description" content="A proactive risk engine that flags perishable inventory before it expires — built for quick-commerce dark stores." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <div class="nav-brand">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Freshline</span>
+      </div>
+      <div class="nav-links">
+        <a href="#problem">Problem</a>
+        <a href="#solution">Solution</a>
+        <a href="#demo">Live Demo</a>
+        <a href="#ask" class="nav-cta">Pilot proposal</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="live-pill">
+        <span class="live-dot"></span> WORKING PROTOTYPE · SYNTHETIC DATA
+      </div>
+      <h1>Catch expiring inventory<br><span class="accent">before it becomes a write-off.</span></h1>
+      <p class="hero-sub">
+        Freshline is a risk-scoring engine for perishable inventory at quick-commerce dark stores —
+        flagging at-risk stock early enough to discount, redirect, or donate it, instead of writing it off.
+      </p>
+      <div class="hero-ctas">
+        <a href="#demo" class="btn btn-primary">See the live demo →</a>
+        <a href="#ask" class="btn btn-ghost">Pilot proposal</a>
+      </div>
+    </div>
+    <div class="hero-grid-bg" aria-hidden="true"></div>
+  </header>
+
+  <section class="section" id="problem">
+    <div class="section-inner">
+      <div class="eyebrow">The Problem</div>
+      <h2>Scale outpaced the manual process</h2>
+      <p class="section-lede">
+        Public filings show perishable inventory complexity growing far faster than the systems meant to manage it.
+        These are sourced, real figures — not estimates.
+      </p>
+
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">12,312 → 46,623</div>
+          <div class="stat-label">SKUs per dark store, FY24 → FY26</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value amber">₹1,214 Cr → ₹5,905 Cr</div>
+          <div class="stat-label">Restated annual loss, FY24 → FY26</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value red">₹78.75</div>
+          <div class="stat-label">Loss per order in FY26 — ~26x Blinkit's ₹3.02</div>
+        </div>
+      </div>
+
+      <p class="footnote">
+        Spoilage/expiry loss isn't separately disclosed by Zepto — these figures reflect overall scale and loss trends from public filings and reporting (Groww IPO filing summary, IndMoney, The South First, CNBC). Nearly 4x more SKUs per store in two years means far more perishable-item decisions per store, per day — more than manual FEFO checks can reliably catch.
+      </p>
+    </div>
+  </section>
+
+  <section class="section alt" id="solution">
+    <div class="section-inner">
+      <div class="eyebrow">The Solution</div>
+      <h2>A risk score, not a postmortem</h2>
+      <p class="section-lede">
+        Instead of discovering expired stock during a manual check, Freshline flags it days in advance —
+        early enough to act.
+      </p>
+
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">①</div>
+          <h3>Per-SKU risk score</h3>
+          <p>Compares days-to-sell-out (stock ÷ sales velocity) against days-to-expiry. Transparent formula — explainable and auditable, not a black box.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">②</div>
+          <h3>Automated actions</h3>
+          <p>Graduated discounting, push notifications to nearby high-intent users, B2B offload, or NGO donation routing — before write-off, not after.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">③</div>
+          <h3>Store-level dashboard</h3>
+          <p>One live, color-coded view per dark store, replacing manual FEFO checks across tens of thousands of SKUs.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">④</div>
+          <h3>Upgrade path to ML</h3>
+          <p>V1 ships with a deterministic formula. V2 swaps in a velocity-prediction model trained on hyperlocal demand, weather, and festival calendars.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="demo">
+    <div class="section-inner wide">
+      <div class="eyebrow">Live Demo</div>
+      <h2>Try the risk engine</h2>
+      <p class="section-lede">
+        This is the actual prototype, running on synthetic dark-store data. Click an action on any flagged item,
+        or hit "Apply all suggested actions" to see projected savings update in real time.
+      </p>
+      <div class="demo-frame">
+        <iframe src="dashboard.html" title="Freshline live dashboard" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" id="ask">
+    <div class="section-inner">
+      <div class="eyebrow">What We're Asking For</div>
+      <h2>A 30-day pilot, not a leap of faith</h2>
+      <div class="ask-list">
+        <div class="ask-item">
+          <span class="ask-num">01</span>
+          <p>A short call with someone on ops, supply chain, or product to validate these assumptions against real dark-store data.</p>
+        </div>
+        <div class="ask-item">
+          <span class="ask-num">02</span>
+          <p>Permission to run a 30-day pilot in 1–2 dark stores, measuring actual spoilage reduction against a control store.</p>
+        </div>
+      </div>
+      <div class="cta-row">
+        <a href="https://github.com/" class="btn btn-ghost" id="github-link">View source on GitHub →</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>Freshline — built as an independent proposal, not affiliated with Zepto.</span>
+      <span class="footer-dim">Figures sourced from public filings, current as of June 2026.</span>
+    </div>
+  </footer>
+
+</body>
+</html>
